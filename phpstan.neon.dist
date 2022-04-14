@@ -1,0 +1,24 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+    - ./vendor/phpstan/phpstan-mockery/extension.neon
+
+parameters:
+    paths:
+        - app
+        - bootstrap
+        - config
+        - routes
+        - tests
+
+    level: 8
+
+    # uncomment when at least one doctrine type will be created
+    ignoreErrors:
+    #     - '#Method App\\Doctrine\\Type\\[a-zA-Z0-9]+\:\:convertToPhpValue\(\) has parameter \$value with no typehint specified\.#'
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
+
+    checkMissingIterableValueType: false
+
+    parallel:
+        maximumNumberOfProcesses: 1

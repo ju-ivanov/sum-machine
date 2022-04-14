@@ -1,0 +1,6 @@
+/.idea
+/storage/proxies
+/vendor
+.env
+.php-cs-fixer.cache
+.phpunit.result.cache
