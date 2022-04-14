@@ -18,7 +18,7 @@ This is very simple demo project written in three hours. You can sum integer num
 
 API uses standard `data/error` answer format.
 
-    GET /reset
+    POST /reset
 
 Starts a new session. You will get generated session token in answer (token has UUID4 format):
 
